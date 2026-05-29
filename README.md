@@ -40,3 +40,15 @@ Un utilisateur doit pouvoir cloner votre projet et le lancer en 3 lignes de comm
 ``git clone https://github.com/votre-nom/rag-entreprise-opensource.git
 cd rag-entreprise-opensource
 docker-compose up --build``
+
+python -m pip install langchain langchain-community langchain-text-splitters pypdf
+
+
+
+# exécuter 
+python src/data_ingestion.py
+
+
+## config postgres
+python -m pip install psycopg2-binary langchain-postgres
+choco install postgresql-pgvector
